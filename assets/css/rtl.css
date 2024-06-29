@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100..900&display=swap');
+
+body,
+* {
+    font-family: "Noto Kufi Arabic", sans-serif;
+    text-align: right;
+}
+
+
+.typewrite .wrap {
+    border-left: 0.08em solid #5079f7;
+    border-right: none;
+}
+
+/* buttons in the hero section  */
+.slider .wrapper .content .btn-button-my a {
+    margin: 0 .625rem 0 0;
+}
+
+.btn-button-my.d-flex {
+    float: right;
+}
+
+.bg-01 .content i {
+    text-align: right !important;
+}
+
+.bg-02 .content a {
+    display: block;
+    margin: .625rem 0;
+}
+
+.bg-03 .wrapper-content .content i {
+    font-size: 3.125rem;
+    color: #5079f7;
+    margin: .625rem 0 .625rem .9375rem;
+}
+
+.bg-05 a i {
+    margin-right: 0px;
+    margin-left: 5px;
+}
+
+.owl-rtl .owl-item {
+    text-align: right;
+}
+
+.owl-rtl .owl-nav {
+    direction: rtl;
+}
+
+.blog a{
+    text-align: right;
+    display: block !important;
+}
+
+.blog .wrapper .content a i {
+    margin-left: 0;
+    margin-right: .5rem;
+}
+
+.blog .wrapper .content span {
+    left: 1.25rem;
+}
+
+footer .min-head h2 {
+    margin: .625rem 0 .625rem .625rem;
+}
+
+footer .min-head .form-control {
+    margin-right: .625rem;
+    margin-left: 0;
+    border-radius: .3125rem;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+footer .min-head label {
+    min-height: 2.5rem;
+    margin: 0;
+    border-radius:0;
+    border-top-left-radius: .3125rem;
+    border-bottom-left-radius: .3125rem;
+}
+
+footer .wrapper ol li {
+    padding-right: .9375rem;
+}
+
+footer .wrapper ol li::before {
+    right: 0;
+}
+
+footer .wrapper .last-link ul li {
+    padding-right: 1.875rem;
+}
+
+footer .wrapper .last-link ul li i {
+    right: 0;
+}
+
+.abt-main .wrapper ol li i {
+    font-size: 1.275rem;
+    font-weight: normal;
+}
+
+

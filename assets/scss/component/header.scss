@@ -1,0 +1,171 @@
+header{
+    position: relative;
+    width:100%;
+    z-index:999;
+    padding:.3125rem 0;
+    background:$color-primary;
+    box-shadow:0px 0px 15px 0px rgba(0,0,0,20%);
+
+    .my-nav{
+        width:100%;
+        display:flex;
+        flex:1 1 100%;
+        align-items:center;
+        justify-content: center;
+        flex-wrap: wrap;
+        position: relative;
+        padding:.625rem 0;
+
+        @media screen and(max-width:767.98px){
+            justify-content:unset;
+        }
+
+        .menu-toggle{
+                    top:1.375rem;
+                    position: absolute;
+                    right:0;
+                    display:flex;
+                    align-items:center;
+                    justify-content:center;
+                    transition:ease-in-out 0.5s;
+                    visibility: hidden;
+                    opacity:0;
+                    
+
+                    @media screen and(max-width:767.98px){
+                        visibility:visible;
+                        opacity:1;
+                    }
+                    
+                    .menu-burger{
+                        width:30px;
+                        height:3px;
+                        background:$icons-color;
+                        transition:ease-in-out 0.5s;
+                        box-shadow:0 2px 5px rgba(255,255,255,0.6);
+                        z-index:99;
+
+                        &::before{
+                            position: absolute;
+                            content:"";
+                            width:30px;
+                            height:3px;
+                            background:$icons-color;
+                            transition:ease-in-out 0.1s;
+                            transform:translatey(-10px);
+                            box-shadow:0 2px 5px rgba(255,255,255,0.6);
+                        }
+
+                        &::after{
+                            position: absolute;
+                            content:"";
+                            width:30px;
+                            height:3px;
+                            background:$icons-color;
+                            transition:ease-in-out 0.1s;
+                            transform:translatey(10px);
+                            box-shadow:0 2px 5px rgba(255,255,255,0.6);
+                        }
+                    }
+                }
+
+        .logo{
+            display:block;
+            width:20%;
+            
+        }
+
+        .menu{
+            display:block;
+            width:70%;
+            text-align:center;
+            position: relative;
+
+            @media screen and(max-width:767.98px){
+                width:100%;
+                text-align: left;
+                display:none;
+
+            }
+
+            ul{
+                li{
+                    display: inline-block;
+                    font-size:1rem;
+                    text-transform:capitalize;
+                    font-weight: 600;
+                    padding:0 .625rem;
+
+                    @media screen and(max-width:767.98px){
+                        display:block;
+                        padding:.9375rem 0;
+                        
+                    }
+
+                    a{
+                        padding:.625rem;
+                        color:$heading-color;
+                    }
+
+                    .active{
+                        color:$icons-color;
+                    }
+                }
+            }
+        }
+
+        .client-btn{
+            display:block;
+            width:10%;
+            position: relative;
+
+            @media screen and(max-width:767.98px){
+                display:none;
+            }
+
+            @media (min-width: 768px) and (max-width: 991.98px){
+                display:none;
+            }
+
+            ol{
+                li{
+                    display:inline-block;
+                    background:$icons-color;
+                    color:$color-primary;
+
+                    @media screen and(max-width:767.98px){
+                        display:inline-block;
+
+                    }
+
+                    a{
+                        display:block;
+                        font-size:1rem;
+                        font-weight:600;
+                        color:$color-primary;
+                        padding:.3125rem .75rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .menu-burger.active{
+        background:rgba(0,0,0,0) !important;
+        box-shadow:none !important;
+    }
+
+    .menu-burger.active::before{
+        transform:rotate(45deg) !important;
+    }
+
+    .menu-burger.active::after{
+        transform:rotate(135deg) !important;
+    }
+
+    .menu.active{
+        display:block !important;
+        transition:ease-in-out 0.1s;
+    }
+
+}
